@@ -1,0 +1,60 @@
+.cover {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.task {
+  background-color: rgb(71, 44, 102);
+  height: 2px;
+  width: 2px;
+  border-bottom-right-radius: 100%;
+}
+
+.nav-bar {
+  border-radius: 0;
+  box-shadow: 0 3px 20px 0 #212121;
+}
+
+.svg-cover {
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+g {
+  display: none;
+}
+
+.stork-anime {
+  stroke: #66BAA9;
+  fill: #66BAA9;
+  stroke-dasharray: 1700;
+  opacity: 10;
+  animation: animate 3.5s cubic-bezier(0,0.23,1,0.1);
+  display: initial;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1700;
+  }
+  30% {
+    opacity: 10;
+    fill: none;
+  }
+  90% {
+    fill: rgba(102, 186, 169, 0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 10;
+    fill: rgba(102, 186, 169, 1);
+    stroke-dashoffset: 0;
+  }
+}
