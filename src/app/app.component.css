@@ -30,8 +30,8 @@ g {
 }
 
 .stork-anime {
-  stroke: #66BAA9;
-  fill: #66BAA9;
+  stroke: rgb(145, 236, 218);
+  fill: rgb(145, 236, 218);
   stroke-dasharray: 1700;
   opacity: 10;
   animation: animate 3.5s cubic-bezier(0,0.23,1,0.1);
@@ -49,12 +49,18 @@ g {
     fill: none;
   }
   90% {
-    fill: rgba(102, 186, 169, 0);
+    fill: rgba(145, 236, 218, 0);
     opacity: 0;
   }
   100% {
     opacity: 10;
-    fill: rgba(102, 186, 169, 1);
+    fill: rgba(145, 236, 218, 1);
     stroke-dashoffset: 0;
+  }
+}
+
+@media(max-width: 600px) {
+  .svg-cover {
+    width: 80%;
   }
 }
