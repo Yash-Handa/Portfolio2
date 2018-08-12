@@ -9,11 +9,14 @@ import anime from 'animejs';
 export class AppComponent implements AfterViewInit {
   title = 'Portfolio';
   nameShow = false;
-  sizeConditioner(condSmall, condMed, condlarge) {
-    if (window.matchMedia('(max-width: 600px)').matches) { return condSmall; } 
-    else if (window.matchMedia('(max-width: 930px)').matches) { return condMed; }
-    else { return condlarge; }
-  };
+  detailShow = false;
+  sizeConditioner(small, med, large) {
+    if (window.matchMedia('(max-width: 600px)').matches) {
+      return small;
+    } else if (window.matchMedia('(max-width: 930px)').matches) {
+      return med;
+    } else { return large; }
+  }
   ngAfterViewInit() {
     const timeLine = anime.timeline();
     timeLine
@@ -46,5 +49,8 @@ export class AppComponent implements AfterViewInit {
       const cover: any = document.getElementsByClassName('cover')[0];
       cover.style.backgroundColor = 'rgb(162, 87, 179)';
     }, 1500);
+    setTimeout(() => {
+      this.detailShow = true;
+    }, 8000);
   }
 }

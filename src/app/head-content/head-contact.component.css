@@ -1,0 +1,130 @@
+.inspired {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: flex;
+  zoom: 1;
+  flex-wrap: wrap;
+  max-width: 100%;
+  letter-spacing: -.31em!important;
+  word-spacing: -.43em!important;
+  list-style-type: none;
+}
+
+.introduction-contact {
+  position: absolute;
+  right: 38px;
+  bottom: 8vh;
+  width: 120px;
+  height: 72vh;
+  text-align: justify;
+  text-align-last: justify;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  vertical-align: baseline;
+  font-size: 63%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.grid:before, .grid:after {
+  letter-spacing: normal;
+  word-spacing: normal;
+  white-space: normal;
+  max-width: 100%;
+}
+
+.introduction-contact li {
+  list-style: none;
+}
+
+.introduction-contact li a {
+  text-decoration: none;
+  cursor: pointer;
+  line-height: normal;
+  font-family: Relevant,Helvetica,Arial,sans-serif;
+  color: #1e2022;
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.introduction-contact li a svg {
+  fill: #b4c5d0;
+  transition: all 1s cubic-bezier(.25,.46,.45,.94);
+  overflow: hidden;
+}
+
+.introduction-contact li a:hover svg {
+  fill: #1e2022;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-wrapper p {
+  transform: rotate(90deg) translate3d(-61px,-7px,0);
+  transform-origin: 50% 0;
+}
+
+.f-ui-mono11 {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-style: normal;
+  word-spacing: .3em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgb(145, 236, 218);
+  font-size: 1.3em;
+  line-height: 1.54545;
+}
+
+.contact-wrapper .line {
+  display: block;
+  width: 1px;
+  height: 49px;
+  position: relative;
+  top: -20px;
+  background-color: #cbd3da;
+}
+
+.contact-wrapper .bottom-iconBtn {
+  background-color: #2e2f35;
+  border-radius: 100%;
+  width: 63px;
+  height: 63px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.43);
+  transition: all 1s cubic-bezier(.25,.46,.45,.94);
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  overflow: visible;
+  padding: 0;
+  line-height: normal;
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+.vertical-align-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-wrapper .bottom-iconBtn:hover {
+  background-color: #1e2022;
+}
+
+.contact-wrapper .bottom-iconBtn svg {
+  fill: #FFF;
+}
