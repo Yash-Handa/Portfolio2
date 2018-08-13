@@ -17,6 +17,7 @@ export class HeadContentComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       document.getElementById('portrait-cover').className = '';
     }, 1000);
-    document.getElementById('content').className = 'animated rollIn';
+    document.getElementById('content').className = 'animated fadeIn delay-1s';
+    document.getElementById('inspired').className = 'animated fadeIn delay-1s';
   }
 }

@@ -30,6 +30,32 @@ g {
   display: none;
 }
 
+#nav-bar {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-style: normal;
+  word-spacing: .3em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgb(145, 236, 218);
+  font-size: 1.5em;
+  line-height: 1.54545;
+  position: absolute;
+  right: 4vw;
+  top: 6vh;
+}
+
+#projects, #about {
+  padding: 5px 2vw;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
 .stork-anime {
   stroke: rgb(145, 236, 218);
   fill: rgb(145, 236, 218);

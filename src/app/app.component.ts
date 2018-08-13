@@ -17,6 +17,15 @@ export class AppComponent implements AfterViewInit {
       return med;
     } else { return large; }
   }
+  mouseEnter($event) {
+    $event.target.className = 'animated rubberBand';
+  }
+  mouseLeave($event) {
+    $event.target.className = '';
+  }
+  click($event) {
+    $event.target.className = 'border';
+  }
   ngAfterViewInit() {
     const timeLine = anime.timeline();
     timeLine

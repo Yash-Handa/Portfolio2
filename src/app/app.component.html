@@ -1,8 +1,9 @@
 <div class="cover">
   <div class="task" [class.nav-bar]="nameShow">
     <span>
-      <svg version="1.1" id="Layer_1" class="svg-cover" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        width="1382.3px" height="405px" viewBox="0 0 1382.3 405" style="enable-background:new 0 0 1382.3 405;" xml:space="preserve">
+      <svg version="1.1" id="Layer_1" class="svg-cover" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" width="1382.3px" height="405px" viewBox="0 0 1382.3 405" style="enable-background:new 0 0 1382.3 405;"
+        xml:space="preserve">
         <style type="text/css">
           .st0 {
             stroke-width: 4;
@@ -86,6 +87,14 @@
           </g>
       </svg>
     </span>
+    <div id="nav-bar" *ngIf="detailShow">
+      <a (mouseenter)="mouseEnter($event) " (mouseleave)="mouseLeave($event)" (click)="click($even)">
+        <span id="projects">Projects</span>
+      </a>
+      <a (mouseenter)="mouseEnter($event)" (mouseleave)="mouseLeave($event)" (click)="click($event)">
+        <span id="about">About Me</span>
+      </a>
+    </div>
   </div>
   <app-head-content *ngIf="detailShow"></app-head-content>
 </div>
