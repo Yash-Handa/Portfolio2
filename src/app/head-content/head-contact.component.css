@@ -88,6 +88,10 @@
   line-height: 1.54545;
 }
 
+.contact-iconsWrapper {
+  padding: 0;
+}
+
 .contact-wrapper .line {
   display: block;
   width: 1px;

@@ -87,14 +87,12 @@
           </g>
       </svg>
     </span>
-    <div id="nav-bar" *ngIf="detailShow">
-      <a (mouseenter)="mouseEnter($event) " (mouseleave)="mouseLeave($event)" (click)="click($even)">
-        <span id="projects">Projects</span>
-      </a>
-      <a (mouseenter)="mouseEnter($event)" (mouseleave)="mouseLeave($event)" (click)="click($event)">
-        <span id="about">About Me</span>
-      </a>
-    </div>
+    <nav id="nav-bar" *ngIf="detailShow" class="fill">
+      <ul>
+        <li><a href="#" style="border-right: 1.5px solid #FFEC94">Projects</a></li>
+        <li><a href="#" style="border-left: 1.5px solid #FFEC94">About Me</a></li>
+      </ul>
+    </nav>
   </div>
   <app-head-content *ngIf="detailShow"></app-head-content>
 </div>
