@@ -150,6 +150,14 @@ button {
   }
 }
 
+@media(max-width: 930px) {
+  .introduction-contact {
+    right: 10px;
+    bottom: 5vh;
+    height: 75vh;
+  }
+}
+
 @media(max-width: 600px) {
   .contact-wrapper .line {
     height: 0;
