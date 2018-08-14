@@ -1,6 +1,6 @@
 .cover {
   height: 100vh;
-  width: 100vw;
+  width: calc(100vw-10px);
   overflow: hidden;
 }
 
@@ -29,21 +29,6 @@
 g {
   display: none;
 }
-
-/* nav {
-  font-family: 'Lora', serif;
-  font-weight: 700;
-  font-style: normal;
-  word-spacing: .3em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgb(145, 236, 218);
-  font-size: 1.5em;
-  line-height: 1.54545;
-  position: absolute;
-  right: 4vw;
-  top: 6vh;
-} */
 
 nav {
   font-family: 'Lora', serif;
@@ -172,5 +157,11 @@ nav.fill ul li a:hover:after {
 @media(max-width: 600px) {
   .svg-cover {
     width: 80%;
+  }
+}
+
+@media(max-width: 930px) {
+  nav {
+    display: none;
   }
 }

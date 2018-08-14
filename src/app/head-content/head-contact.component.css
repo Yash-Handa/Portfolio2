@@ -41,6 +41,7 @@
 
 .introduction-contact li {
   list-style: none;
+  padding-bottom: 3px;
 }
 
 .introduction-contact li a {
@@ -62,7 +63,7 @@
 }
 
 .introduction-contact li a:hover svg {
-  fill: #1e2022;
+  fill: rgb(71, 44, 102);
 }
 
 .contact-wrapper {
@@ -101,8 +102,12 @@
   background-color: #cbd3da;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
 .contact-wrapper .bottom-iconBtn {
-  background-color: #2e2f35;
   border-radius: 100%;
   width: 63px;
   height: 63px;
@@ -126,9 +131,42 @@
 }
 
 .contact-wrapper .bottom-iconBtn:hover {
-  background-color: #1e2022;
+  background-color:transparent;
+  cursor: pointer;
 }
 
 .contact-wrapper .bottom-iconBtn svg {
+  cursor: pointer;
   fill: #FFF;
+}
+
+@media(max-height: 550px) {
+  .contact-wrapper .line {
+    height: 0;
+  }
+
+  .f-ui-mono11 {
+    transform: rotate(90deg) translate3d( 11px,-7px,0);
+  }
+}
+
+@media(max-width: 600px) {
+  .contact-wrapper .line {
+    height: 0;
+  }
+
+  .f-ui-mono11 {
+    display: none;
+  }
+
+  .contact-iconsWrapper {
+    display: none;
+  }
+
+  .introduction-contact {
+    height: 65px;
+    width: 65px;
+    right: 18px;
+    bottom: 4vh;
+  }
 }

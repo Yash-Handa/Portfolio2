@@ -7,6 +7,12 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 })
 export class HeadContentComponent implements OnInit, AfterViewInit {
   size = window.innerWidth;
+  mouseEnter($event) {
+    $event.target.className = 'animated tada infinite';
+  }
+  mouseLeave($event) {
+    $event.target.className = 'bottom-iconBtn vertical-align-wrapper';
+  }
   constructor() { }
 
   ngOnInit() {
@@ -14,10 +20,13 @@ export class HeadContentComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     document.getElementById('portrait-cover').className += 'animated rotateInDownLeft';
+    document.getElementById('circle-cover').className += ' animated bounceInDown';
+    document.getElementById('expert').className += ' animated bounceInDown delay-2s';
+    document.getElementById('expert2').className += ' animated fadeIn delay-1s';
+    document.getElementById('content').className = 'animated fadeIn delay-1s';
+    document.getElementById('inspired').className = 'animated fadeIn delay-1s';
     setTimeout(() => {
       document.getElementById('portrait-cover').className = '';
     }, 1000);
-    document.getElementById('content').className = 'animated fadeIn delay-1s';
-    document.getElementById('inspired').className = 'animated fadeIn delay-1s';
   }
 }
