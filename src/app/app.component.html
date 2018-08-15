@@ -96,4 +96,6 @@
   </div>
   <app-head-content *ngIf="detailShow"></app-head-content>
 </div>
-<div style="height: 200px;"></div>
+<div *ngIf="detailShow">
+  <app-skills></app-skills>
+</div>
