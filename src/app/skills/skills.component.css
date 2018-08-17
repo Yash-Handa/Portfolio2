@@ -7,6 +7,11 @@
   background: rgb(162, 87, 179);
 }
 
+.skill-head {
+  font-size: 7vh;
+  text-align: center;
+}
+
 .skills {
   position: relative;
   margin: 0;
@@ -199,7 +204,7 @@
 
 @media(max-width: 930px) {
   .skill-cover {
-    padding: 5em 1em;
+    padding: 3em 1em;
   }
 
   .skills {
@@ -208,12 +213,12 @@
 
   .btn  {
     height: 68px;
-    min-width: 150px;
+    min-width: 130px;
     line-height: 24px;
     font-size: 15px;
     font-family: inherit;
     padding: 22px 27px;
-    margin: 10px;
+    margin: 7px;
     letter-spacing: 1px;
     font-weight: 500;
   }
@@ -230,11 +235,11 @@
 
   .btn  {
     height: 64px;
-    min-width: 100px;
+    min-width: 80px;
     line-height: 20px;
     font-size: 13px;
     padding: 20px 10px;
-    margin: 5px;
+    margin: 3px;
     letter-spacing: 1px;
     font-weight: 400;
   }

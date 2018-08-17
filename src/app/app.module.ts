@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeadContentComponent } from './head-content/head-content.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadContentComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule
