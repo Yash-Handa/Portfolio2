@@ -1,10 +1,10 @@
 .skill-cover {
   font-family: 'Lato', Calibri, Arial, sans-serif;
   margin: 0;
-  padding: 5em 3em;
+  padding: 2em 3em 7em;
   text-align: center;
   color: #ffffff;
-  background: rgb(162, 87, 179);
+  background: #74428D;
 }
 
 .skill-head {
@@ -23,7 +23,7 @@
 }
 
 .btn  {
-  background: #823aa0;
+  background: #563166;
   color: #ffffff;
   height: 70px;
   min-width: 200px;

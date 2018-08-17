@@ -150,6 +150,12 @@ button {
   }
 }
 
+@media(max-height: 493px) {
+  .f-ui-mono11 {
+    display: none;
+  }
+}
+
 @media(max-width: 930px) {
   .introduction-contact {
     right: 10px;
