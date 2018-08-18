@@ -180,11 +180,11 @@ nav.fill ul li a:hover:after {
 
 .section-divider:hover:before {
   color: #FFEC94;
-  box-shadow: 0px 0px 30px 3px rgb(145, 236, 218);
+  box-shadow: 0px 0px 30px 1px #FFEC94;
 }
 
 .section-divider:hover {
-  box-shadow: 0px 0px 30px 2px rgb(145, 236, 218);
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, .5);
 }
 
 .section {
