@@ -1,8 +1,14 @@
 .cover {
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
   max-width: 100%;
+}
+
+.cover-flow {
+  min-height: 100vh;
+  height: auto;
+  overflow-y: auto;
 }
 
 .task {
@@ -195,7 +201,7 @@ nav.fill ul li a:hover:after {
   align-items: center;
 }
 
-.colour-2:before {
+.colour-1:before {
   content: "";
   display: block;
   background-size: 60% 60%;
@@ -205,11 +211,11 @@ nav.fill ul li a:hover:after {
   background-repeat: no-repeat;
 }
 
-.colour-2:hover:before {
+.colour-1:hover:before {
   background-image: url(../assets/Misc/user-h.svg);
 }
 
-.colour-3:before {
+.colour-2:before {
   content: "";
   display: block;
   background-size: 50% 50%;
@@ -219,8 +225,22 @@ nav.fill ul li a:hover:after {
   background-repeat: no-repeat;
 }
 
-.colour-3:hover:before {
+.colour-2:hover:before {
   background-image: url(../assets/Misc/idea-h.svg);
+}
+
+.colour-3:before {
+  content: "";
+  display: block;
+  background-size: 60% 60%;
+  background-position: center;
+  background-color: #74428D;
+  background-image: url(../assets/Misc/about.svg);
+  background-repeat: no-repeat;
+}
+
+.colour-3:hover:before {
+  background-image: url(../assets/Misc/about-h.svg);
 }
 
 @media(max-width: 930px) {

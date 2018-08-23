@@ -1,4 +1,4 @@
-<div class="cover">
+<div class="cover" [class.cover-flow]="detailShow">
   <div class="task" [class.nav-bar]="nameShow">
     <span>
       <svg version="1.1" id="Layer_1" class="svg-cover" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -97,6 +97,7 @@
   <app-head-content *ngIf="detailShow"></app-head-content>
 </div>
 <div *ngIf="detailShow">
-  <app-skills class="section-divider section colour-2"></app-skills>
-  <app-projects class="section-divider section colour-3"></app-projects>
+  <app-skills class="section-divider section colour-1"></app-skills>
+  <app-projects class="section-divider section colour-2"></app-projects>
+  <app-about-me class="section-divider section colour-3"></app-about-me>
 </div>
