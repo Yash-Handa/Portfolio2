@@ -18,7 +18,6 @@
   color: rgb(71, 44, 102);
 }
 
-
 .column h2 {
   text-align: center;
   margin: 0;
@@ -130,32 +129,32 @@
   height: 40px;
   width: 55%;
   margin-bottom: 8px;
-	display: inline-block;
+  display: inline-block;
   border: 3px solid #e43;
   border-radius: 5px;
-	font-size: 20px;
-	font-weight: 500;
-	text-align: center;
-	text-decoration: none;
-	color: #e43;
-	overflow: hidden;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: #e43;
+  overflow: hidden;
 }
 
 .face-button .face-primary,
-  .face-button .face-secondary {
-	display: block;
+.face-button .face-secondary {
+  display: block;
   text-align: center;
-	line-height: 40px;
-	transition: margin .4s;
+  line-height: 40px;
+  transition: margin .4s;
 }
 
 .face-button .face-primary {
-	background-color: #e43;
-	color: #fff;
+  background-color: #e43;
+  color: #fff;
 }
 
 .face-button:hover .face-primary {
-	margin-top: -40px;
+  margin-top: -40px;
 }
 
 @media screen and (max-width: 930px) {
