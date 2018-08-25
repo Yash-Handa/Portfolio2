@@ -1,4 +1,4 @@
-<div class="cover" [class.cover-flow]="detailShow">
+<div class="cover" [class.cover-flow]="detailShow" id="intro">
   <div class="task" [class.nav-bar]="nameShow">
     <span>
       <svg version="1.1" id="Layer_1" class="svg-cover" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -89,16 +89,16 @@
     </span>
     <nav id="nav-bar" *ngIf="detailShow" class="fill animated flipInX delay-1s">
       <ul>
-        <li><a href="#" style="border-right: 1.5px solid #FFEC94">Projects</a></li>
-        <li><a href="#" style="border-left: 1.5px solid #FFEC94">About Me</a></li>
+        <li><a [ngx-scroll-to]="'projects'" style="border-right: 1.5px solid #FFEC94">Projects</a></li>
+        <li><a [ngx-scroll-to]="'about'" style="border-left: 1.5px solid #FFEC94">About Me</a></li>
       </ul>
     </nav>
   </div>
   <app-head-content *ngIf="detailShow"></app-head-content>
 </div>
 <div *ngIf="detailShow">
-  <app-skills class="section-divider section colour-1"></app-skills>
-  <app-projects class="section-divider section colour-2"></app-projects>
-  <app-about-me class="section-divider section colour-3"></app-about-me>
+  <app-skills class="section-divider section colour-1" id="skills"></app-skills>
+  <app-projects class="section-divider section colour-2" id="projects"></app-projects>
+  <app-about-me class="section-divider section colour-3" id="about"></app-about-me>
   <app-footer></app-footer>
 </div>
