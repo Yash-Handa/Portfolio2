@@ -5,6 +5,7 @@
   text-align: center;
   color: #ffffff;
   background-color: #74428D;
+  overflow-x: hidden;
 }
 
 .heading {

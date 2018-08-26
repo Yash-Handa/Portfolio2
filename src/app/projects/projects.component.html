@@ -1,10 +1,10 @@
 <div class="projects-cover">
-  <h2 class="heading">Projects ({{projectNo}})</h2>
+  <h2 class="heading hide-on-init" animateOnScroll animationName="animated bounceIn">Projects ({{projectNo}})</h2>
 
   <div class="row projects">
     <div class="column" *ngFor="let p of projects">
-      <h2>{{p.name}}</h2>
-      <div class="hover-fold">
+      <h2 class="hide-on-init" animateOnScroll animationName="animated zoomIn">{{p.name}}</h2>
+      <div class="hover-fold hide-on-init" animateOnScroll animationName="animated flipInX">
         <div class="btn-cover">
           <a href={{p.gitHubLink}} target="_blank" class="face-button" *ngIf="p.gitHubButton">
             <div class="face-primary">

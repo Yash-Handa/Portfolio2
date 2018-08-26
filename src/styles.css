@@ -7,3 +7,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.animated {
+  visibility: visible !important;
+}
+
+.hide-on-init {
+  visibility: hidden;
+}

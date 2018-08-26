@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import * as RX from 'rxjs/Observable';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 import { AppComponent } from './app.component';
 import { HeadContentComponent } from './head-content/head-content.component';
@@ -20,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

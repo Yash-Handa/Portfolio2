@@ -7,7 +7,7 @@ import anime from 'animejs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements AfterViewInit {
-  title = 'Portfolio';
+  title = 'Yash Handa';
   nameShow = false;
   detailShow = false;
   sizeConditioner(small, med, large) {

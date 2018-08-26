@@ -22,7 +22,7 @@
   color: #ffffff;
 }
 
-.btn  {
+.btn {
   background: #563166;
   color: #ffffff;
   height: 70px;
@@ -155,7 +155,6 @@
 
 .anime:before {
   content: url(../../assets/Skill-logos/anime.png);
-
   padding-top: 3px;
   background: #000000;
 }
@@ -206,12 +205,10 @@
   .skill-cover {
     padding: 3em 1em;
   }
-
   .skills {
     padding: 1em;
   }
-
-  .btn  {
+  .btn {
     height: 68px;
     min-width: 130px;
     line-height: 24px;
@@ -228,12 +225,10 @@
   .skill-cover {
     padding: 3em 1em;
   }
-
   .skills {
     padding: 0;
   }
-
-  .btn  {
+  .btn {
     height: 64px;
     min-width: 80px;
     line-height: 20px;

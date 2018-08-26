@@ -32,8 +32,10 @@
     "core-js": "^2.5.4",
     "express": "^4.16.3",
     "materialize-css": "^1.0.0-rc.2",
+    "ng2-animate-on-scroll": "^1.0.11",
     "path": "^0.12.7",
     "rxjs": "^6.0.0",
+    "rxjs-compat": "^6.2.2",
     "typescript": "~2.7.2",
     "zone.js": "~0.8.26"
   },
