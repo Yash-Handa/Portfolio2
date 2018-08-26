@@ -102,13 +102,7 @@
 </div>
 <div *ngIf="detailShow" class="animated fadeIn delay-1s">
   <app-skills class="section-divider section colour-1" id="skills"></app-skills>
-  <div style="background: #74428D; margin:0; padding: 0">
-    <app-projects class="hide-on-init section-divider section colour-2" id="projects" animateOnScroll animationName="animated bounceInUp"></app-projects>
-  </div>
-  <div style="background: rgb(71, 44, 102); margin:0; padding: 0">
-    <app-about-me class="hide-on-init section-divider section colour-3" id="about" animateOnScroll animationName="animated bounceInUp"></app-about-me>
-  </div>
-  <div style="background: #74428D; margin:0; padding: 0">
-    <app-footer class="hide-on-init" animateOnScroll animationName="animated fadeIn"></app-footer>
-  </div>
+  <app-projects class="section-divider section colour-2" id="projects"></app-projects>
+  <app-about-me class="section-divider section colour-3" id="about"></app-about-me>
+  <app-footer></app-footer>
 </div>
