@@ -22,11 +22,15 @@ export class HeadContentComponent implements OnInit, AfterViewInit {
     document.getElementById('portrait-cover').className += 'animated rotateInDownLeft';
     document.getElementById('circle-cover').className += ' animated bounceInDown';
     document.getElementById('expert').className += ' animated bounceInDown delay-2s';
+    document.getElementById('next').className += ' animated bounceInDown delay-2s';
     document.getElementById('expert2').className += ' animated fadeIn delay-1s';
     document.getElementById('content').className = 'animated fadeIn delay-1s';
     document.getElementById('inspired').className = 'animated fadeIn delay-1s';
     setTimeout(() => {
       document.getElementById('portrait-cover').className = '';
     }, 1000);
+    setTimeout(() => {
+      document.getElementById('next').className = 'next animated bounce infinite';
+    }, 3000);
   }
 }
