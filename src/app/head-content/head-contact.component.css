@@ -123,6 +123,11 @@ button {
   line-height: normal;
   -webkit-appearance: button;
   cursor: pointer;
+  outline: none;
+}
+
+.contact-wrapper .bottom-iconBtn:focus {
+  outline: none;
 }
 
 .vertical-align-wrapper {
@@ -134,6 +139,7 @@ button {
 .contact-wrapper .bottom-iconBtn:hover {
   background-color: transparent;
   cursor: pointer;
+  outline: none;
 }
 
 .contact-wrapper .bottom-iconBtn svg {

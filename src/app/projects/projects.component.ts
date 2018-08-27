@@ -10,7 +10,7 @@ export class ProjectsComponent implements OnInit {
   projects: Projects[] = [
     {
       name: 'Project 1',
-      description: `I designed this shirt for my friend's band "2 or More". I was really excited to play with the transparencies in the ink. I thought it would be fun, but the screen printer didn't.`,
+      description: `Description of the Project`,
       tStyle: {
         'background': 'url(../../assets/Project-Images/projT.jpg)',
         'background-size': '100% 100%',
@@ -26,7 +26,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       name: 'Project 2',
-      description: `I designed this shirt for my friend's band "2 or More". I was really excited to play with the transparencies in the ink. I thought it would be fun, but the screen printer didn't.`,
+      description: `Description of the Project`,
       tStyle: {
         'background': 'url(../../assets/Project-Images/projT.jpg)',
         'background-size': '100% 100%',
@@ -42,7 +42,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       name: 'Project 3',
-      description: `I designed this shirt for my friend's band "2 or More". I was really excited to play with the transparencies in the ink. I thought it would be fun, but the screen printer didn't.`,
+      description: `Description of the Project`,
       tStyle: {
         'background': 'url(../../assets/Project-Images/projT.jpg)',
         'background-size': '100% 100%',
@@ -58,7 +58,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       name: 'Project 4',
-      description: `I designed this shirt for my friend's band "2 or More". I was really excited to play with the transparencies in the ink. I thought it would be fun, but the screen printer didn't.`,
+      description: `Description of the Project`,
       tStyle: {
         'background': 'url(../../assets/Project-Images/projT.jpg)',
         'background-size': '100% 100%',
@@ -74,7 +74,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       name: 'Project 5',
-      description: `I designed this shirt for my friend's band "2 or More". I was really excited to play with the transparencies in the ink. I thought it would be fun, but the screen printer didn't.`,
+      description: `Description of the Project`,
       tStyle: {
         'background': 'url(../../assets/Project-Images/projT.jpg)',
         'background-size': '100% 100%',
@@ -90,7 +90,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       name: 'Project 6',
-      description: `I designed this shirt for my friend's band "2 or More". I was really excited to play with the transparencies in the ink. I thought it would be fun, but the screen printer didn't.`,
+      description: `Description of the Project`,
       tStyle: {
         'background': 'url(../../assets/Project-Images/projT.jpg)',
         'background-size': '100% 100%',
