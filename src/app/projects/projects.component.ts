@@ -12,11 +12,11 @@ export class ProjectsComponent implements OnInit {
       name: 'Project 1',
       description: `Description of the Project`,
       tStyle: {
-        'background': 'url(../../assets/ProjectImages/projT.jpg)',
+        'background': 'url(../../Portfolio2/assets/ProjectImages/projT.jpg)',
         'background-size': '100% 100%',
       },
       bStyle: {
-        'background': 'url(../../assets/ProjectImages/projB.jpg)',
+        'background': 'url(../../Portfolio2/assets/ProjectImages/projB.jpg)',
         'background-size': '100% 100%',
       },
       gitHubLink: 'https://www.google.com',
@@ -28,11 +28,11 @@ export class ProjectsComponent implements OnInit {
       name: 'Project 2',
       description: `Description of the Project`,
       tStyle: {
-        'background': 'url(../../assets/ProjectImages/projT.jpg)',
+        'background': 'url(../../Portfolio2/assets/ProjectImages/projT.jpg)',
         'background-size': '100% 100%',
       },
       bStyle: {
-        'background': 'url(../../assets/ProjectImages/projB.jpg)',
+        'background': 'url(../../Portfolio2/assets/ProjectImages/projB.jpg)',
         'background-size': '100% 100%',
       },
       gitHubLink: '#',
@@ -44,11 +44,11 @@ export class ProjectsComponent implements OnInit {
       name: 'Project 3',
       description: `Description of the Project`,
       tStyle: {
-        'background': 'url(../../assets/ProjectImages/projT.jpg)',
+        'background': 'url(../../Portfolio2/assets/ProjectImages/projT.jpg)',
         'background-size': '100% 100%',
       },
       bStyle: {
-        'background': 'url(../../assets/ProjectImages/projB.jpg)',
+        'background': 'url(../../Portfolio2/assets/ProjectImages/projB.jpg)',
         'background-size': '100% 100%',
       },
       gitHubLink: '#',
@@ -60,11 +60,11 @@ export class ProjectsComponent implements OnInit {
       name: 'Project 4',
       description: `Description of the Project`,
       tStyle: {
-        'background': 'url(../../assets/ProjectImages/projT.jpg)',
+        'background': 'url(../../Portfolio2/assets/ProjectImages/projT.jpg)',
         'background-size': '100% 100%',
       },
       bStyle: {
-        'background': 'url(../../assets/ProjectImages/projB.jpg)',
+        'background': 'url(../../Portfolio2/assets/ProjectImages/projB.jpg)',
         'background-size': '100% 100%',
       },
       gitHubLink: '#',
@@ -76,11 +76,11 @@ export class ProjectsComponent implements OnInit {
       name: 'Project 5',
       description: `Description of the Project`,
       tStyle: {
-        'background': 'url(../../assets/ProjectImages/projT.jpg)',
+        'background': 'url(../../Portfolio2/assets/ProjectImages/projT.jpg)',
         'background-size': '100% 100%',
       },
       bStyle: {
-        'background': 'url(../../assets/ProjectImages/projB.jpg)',
+        'background': 'url(../../Portfolio2/assets/ProjectImages/projB.jpg)',
         'background-size': '100% 100%',
       },
       gitHubLink: '#',
@@ -92,11 +92,11 @@ export class ProjectsComponent implements OnInit {
       name: 'Project 6',
       description: `Description of the Project`,
       tStyle: {
-        'background': 'url(../../assets/ProjectImages/projT.jpg)',
+        'background': 'url(../../Portfolio2/assets/ProjectImages/projT.jpg)',
         'background-size': '100% 100%',
       },
       bStyle: {
-        'background': 'url(../../assets/ProjectImages/projB.jpg)',
+        'background': 'url(../../Portfolio2/assets/ProjectImages/projB.jpg)',
         'background-size': '100% 100%',
       },
       gitHubLink: '#',
