@@ -5,6 +5,11 @@
   text-align: center;
   color: #ffffff;
   background: rgb(71, 44, 102);
+  overflow-x: hidden;
+}
+
+.item-carousel {
+  border: none !important;
 }
 
 .projects {

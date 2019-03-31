@@ -1,7 +1,7 @@
 <div class="projects-cover" (click)="preventParentClick($event)">
   <h2 class="heading hide-on-init" animateOnScroll animationName="animated bounceIn">Projects ({{projectNo}})</h2>
 
-  <div class="row projects">
+  <div class="row projects" *ngIf="innerWidth >= 650">
     <div class="column" *ngFor="let p of projects">
       <h2 class="hide-on-init" animateOnScroll animationName="animated zoomIn">{{p.name}}</h2>
       <div class="hover-fold hide-on-init" animateOnScroll animationName="animated flipInX">
@@ -33,4 +33,47 @@
       </div>
     </div>
   </div>
+
+  <carousel-component
+    *ngIf="innerWidth < 650"
+    class="row projects"
+    (onReachEnd)="onReachEndFn()"
+    (onTouchStart)="onTouchStartFn()"
+    #carousel
+    inViewport
+    [inViewportOptions]="{ threshold: [1000] }"
+    (inViewportAction)="onViewport()"
+    [delayAutoPlay]="3000"
+  >
+    <div class="column item-carousel" *ngFor="let p of projects">
+      <h2 class="hide-on-init" animateOnScroll animationName="animated zoomIn">{{p.name}}</h2>
+      <div class="hover-fold hide-on-init" animateOnScroll animationName="animated flipInX">
+        <div class="btn-cover">
+          <a href={{p.gitHubLink}} target="_blank" class="face-button" *ngIf="p.gitHubButton">
+            <div class="face-primary">
+              Code
+            </div>
+            <div class="face-secondary">
+              GitHub
+            </div>
+          </a>
+          <a class="face-button" href={{p.liveLink}} target="_blank" *ngIf="p.liveButton">
+            <div class="face-primary">
+              Demo
+            </div>
+            <div class="face-secondary">
+              Live Demo
+            </div>
+          </a>
+        </div>
+        <div class="top">
+          <div [ngStyle]="p.tStyle" class="face front"></div>
+          <div class="back face">
+            <p>{{p.description}}</p>
+          </div>
+        </div>
+        <div [ngStyle]="p.bStyle" class="bottom"></div>
+      </div>
+    </div>
+</carousel-component>
 </div>

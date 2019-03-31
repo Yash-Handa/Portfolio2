@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "publish": "ng build --prod --base-href \"https://yash-handa.github.io/Portfolio2/\" && npx ngh --dir=dist/Portfolio"
   },
   "private": true,
   "dependencies": {
@@ -23,7 +24,10 @@
     "@nicky-lenaers/ngx-scroll-to": "^1.0.0",
     "animejs": "^2.2.0",
     "core-js": "^2.5.4",
+    "intersection-observer": "^0.5.1",
+    "ng-in-viewport": "^6.0.3",
     "ng2-animate-on-scroll": "^1.0.11",
+    "ngx-carousel-lib": "^0.1.2",
     "path": "^0.12.7",
     "rxjs": "^6.4.0",
     "rxjs-compat": "^6.2.2",
