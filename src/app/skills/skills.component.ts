@@ -90,4 +90,7 @@ export class SkillsComponent implements OnInit {
   ngOnInit() {
   }
 
+  preventParentClick(e: any) {
+    e.stopPropagation();
+  }
 }

@@ -110,4 +110,8 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  preventParentClick(e: any) {
+    e.stopPropagation();
+  }
 }

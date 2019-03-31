@@ -1,6 +1,11 @@
-<div class="skill-cover">
+<div class="skill-cover" (click)="preventParentClick($event)">
   <h2 class="skill-head hide-on-init" animateOnScroll animationName="animated bounceIn">Skills ({{skillNo}})</h2>
   <p class="skills">
-    <button class="btn hide-on-init {{s.class}}" *ngFor="let s of skills" animateOnScroll animationName="animated flipInX"><span>{{s.name}}</span></button>
+    <button
+      class="btn hide-on-init {{s.class}}"
+      *ngFor="let s of skills"
+      animateOnScroll
+      animationName="animated flipInX"
+    ><span>{{s.name}}</span></button>
   </p>
 </div>

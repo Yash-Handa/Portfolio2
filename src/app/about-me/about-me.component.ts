@@ -12,4 +12,7 @@ export class AboutMeComponent implements OnInit {
   ngOnInit() {
   }
 
+  preventParentClick(e: any) {
+    e.stopPropagation();
+  }
 }

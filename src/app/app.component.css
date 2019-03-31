@@ -179,6 +179,7 @@ nav.fill ul li a:hover:after {
   height: 6.5rem;
   border-radius: 100%;
   position: absolute;
+  cursor: pointer;
   top: -3.25rem;
   left: calc(50% - 3.25rem);
   color: #b4c5d0;
