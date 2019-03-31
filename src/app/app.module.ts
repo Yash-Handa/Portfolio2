@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import * as RX from 'rxjs/Observable';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 

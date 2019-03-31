@@ -1,6 +1,6 @@
 <div class="head">
   <div class="large">
-    <a href="#img1" id="portrait-cover">
+    <a href="#img1" id="portrait-cover" (click)="stopReload($event)">
       <img
         src="./../../Portfolio2/assets/Portrait.jpg"
         alt="Yash Handa"
@@ -33,7 +33,7 @@
   </div>
 
   <div class="small">
-    <a href="#img1" class="circle-cover" id="circle-cover">
+    <a href="#img1" class="circle-cover" id="circle-cover" (click)="stopReload($event)">
       <img src="./../../Portfolio2/assets/Portrait.jpg" alt="Yash Handa" class="circle" />
     </a>
     <h2 id="content">

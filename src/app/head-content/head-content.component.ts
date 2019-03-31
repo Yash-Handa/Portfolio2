@@ -33,4 +33,8 @@ export class HeadContentComponent implements OnInit, AfterViewInit {
       document.getElementById('next').className = 'next animated bounce infinite';
     }, 3000);
   }
+
+  stopReload(e: any) {
+    e.preventDefault();
+  }
 }
