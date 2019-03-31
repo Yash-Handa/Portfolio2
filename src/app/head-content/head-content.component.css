@@ -53,13 +53,12 @@
 	margin-top: 2%;
 }
 
-.lightbox:target {
-	/** Remove default browser outline */
+/* .lightbox:target {
+
 	outline: none;
 
-	/** Unhide lightbox **/
 	display: block;
-}
+} */
 
 #content {
   padding-top: 0;
