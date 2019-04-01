@@ -232,6 +232,17 @@
   .projects {
     padding: 0;
   }
+  .face-button {
+    height: 40px;
+    width: 55%;
+    margin-bottom: 4px;
+    font-size: 18px;
+  }
+
+  .face-button .face-primary,
+  .face-button .face-secondary {
+    line-height: 40px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -249,16 +260,16 @@
     margin-bottom: 0;
   }
   .hover-fold {
-    height: 60vh;
+    height: 50vh;
     margin: 4vh 1% 8vh;
-    width: 98%;
+    width: 100%;
   }
   .btn-cover {
-    padding-top: 10%;
+    padding-top: 8%;
   }
   .hover-fold .back {
     padding: 0 10px;
-    font-size: 2.8vh;
+    font-size: 2vh;
     overflow: hidden;
   }
 }
