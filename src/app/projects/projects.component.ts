@@ -9,7 +9,6 @@ import { CarouselComponent } from 'ngx-carousel-lib';
 })
 export class ProjectsComponent implements OnInit {
   @ViewChild('carousel') carousel: CarouselComponent;
-  looper: any;
   public innerWidth: any;
   looperCheck = true;
   projects: Projects[] = [
@@ -122,23 +121,26 @@ export class ProjectsComponent implements OnInit {
     this.innerWidth = window.innerWidth;
   }
 
-  onViewport() {
-    this.carousel.autoPlayStart();
-  }
-
   onReachEndFn() {
-    this.looper = setTimeout(() => {
-      if (this.looperCheck === false) {
-        clearTimeout(this.looper);
-      } else {
-        this.carousel.slideTo(0);
-      }
-    }, 1500);
+    if (this.looperCheck === false) {
+    } else {
+      this.carousel.slideTo(0);
+    }
   }
 
   onTouchStartFn() {
     this.carousel.autoPlayStop();
     this.looperCheck = false;
+  }
+
+  goLeft() {
+    this.onTouchStartFn();
+    this.carousel.slidePrev();
+  }
+
+  goRight() {
+    this.onTouchStartFn();
+    this.carousel.slideNext();
   }
 
   preventParentClick(e: any) {

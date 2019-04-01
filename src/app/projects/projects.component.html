@@ -1,7 +1,7 @@
 <div class="projects-cover" (click)="preventParentClick($event)">
   <h2 class="heading hide-on-init" animateOnScroll animationName="animated bounceIn">Projects ({{projectNo}})</h2>
 
-  <div class="row projects" *ngIf="innerWidth >= 650">
+  <div class="row projects" *ngIf="innerWidth >= 750">
     <div class="column" *ngFor="let p of projects">
       <h2 class="hide-on-init" animateOnScroll animationName="animated zoomIn">{{p.name}}</h2>
       <div class="hover-fold hide-on-init" animateOnScroll animationName="animated flipInX">
@@ -34,46 +34,58 @@
     </div>
   </div>
 
-  <carousel-component
-    *ngIf="innerWidth < 650"
-    class="row projects"
-    (onReachEnd)="onReachEndFn()"
-    (onTouchStart)="onTouchStartFn()"
-    #carousel
-    inViewport
-    [inViewportOptions]="{ threshold: [1000] }"
-    (inViewportAction)="onViewport()"
-    [delayAutoPlay]="3000"
-  >
-    <div class="column item-carousel" *ngFor="let p of projects">
-      <h2 class="hide-on-init" animateOnScroll animationName="animated zoomIn">{{p.name}}</h2>
-      <div class="hover-fold hide-on-init" animateOnScroll animationName="animated flipInX">
-        <div class="btn-cover">
-          <a href={{p.gitHubLink}} target="_blank" class="face-button" *ngIf="p.gitHubButton">
-            <div class="face-primary">
-              Code
-            </div>
-            <div class="face-secondary">
-              GitHub
-            </div>
-          </a>
-          <a class="face-button" href={{p.liveLink}} target="_blank" *ngIf="p.liveButton">
-            <div class="face-primary">
-              Demo
-            </div>
-            <div class="face-secondary">
-              Live Demo
-            </div>
-          </a>
+  <div *ngIf="innerWidth < 750">
+    <div class="toggle-container">
+        <div class="left-caret" (click)="goLeft()">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-left" role="img"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" height="50px">
+            <path fill="currentColor" d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"></path>
+          </svg>
         </div>
-        <div class="top">
-          <div [ngStyle]="p.tStyle" class="face front"></div>
-          <div class="back face">
-            <p>{{p.description}}</p>
-          </div>
+        <div class="right-caret" (click)="goRight()">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" height="50px" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+            <path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path>
+          </svg>
         </div>
-        <div [ngStyle]="p.bStyle" class="bottom"></div>
-      </div>
     </div>
-</carousel-component>
+    <carousel-component
+      class="row projects"
+      (onReachEnd)="onReachEndFn()"
+      (onTouchStart)="onTouchStartFn()"
+      #carousel
+      [autoPlay]="true"
+      [delayAutoPlay]="3000"
+      [morePairSlides]="2"
+    >
+      <div class="column item-carousel" *ngFor="let p of projects">
+        <h2 class="hide-on-init" animateOnScroll animationName="animated zoomIn">{{p.name}}</h2>
+        <div class="hover-fold hide-on-init" animateOnScroll animationName="animated flipInX">
+          <div class="btn-cover">
+            <a href={{p.gitHubLink}} target="_blank" class="face-button" *ngIf="p.gitHubButton">
+              <div class="face-primary">
+                Code
+              </div>
+              <div class="face-secondary">
+                GitHub
+              </div>
+            </a>
+            <a class="face-button" href={{p.liveLink}} target="_blank" *ngIf="p.liveButton">
+              <div class="face-primary">
+                Demo
+              </div>
+              <div class="face-secondary">
+                Live Demo
+              </div>
+            </a>
+          </div>
+          <div class="top">
+            <div [ngStyle]="p.tStyle" class="face front"></div>
+            <div class="back face">
+              <p>{{p.description}}</p>
+            </div>
+          </div>
+          <div [ngStyle]="p.bStyle" class="bottom"></div>
+        </div>
+      </div>
+    </carousel-component>
+  </div>
 </div>
