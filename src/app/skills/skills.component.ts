@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
+  public innerWidth: any;
   skills: object[] = [
     {
       name: 'HTML5',
@@ -32,8 +33,16 @@ export class SkillsComponent implements OnInit {
       class: 'ex'
     },
     {
+      name: 'React.js',
+      class: 'react'
+    },
+    {
       name: 'MongoDB',
       class: 'mongo'
+    },
+    {
+      name: 'GraphQL',
+      class: 'graphql'
     },
     {
       name: 'Heroku',
@@ -44,16 +53,16 @@ export class SkillsComponent implements OnInit {
       class: 'mocha'
     },
     {
-      name: 'GitHub',
-      class: 'github'
+      name: 'FireBase',
+      class: 'firebase'
+    },
+    {
+      name: 'PWA',
+      class: 'pwa'
     },
     {
       name: 'BootStrap.css',
       class: 'bootstrap'
-    },
-    {
-      name: 'Anime.js',
-      class: 'anime'
     },
     {
       name: 'Materialize.css',
@@ -62,6 +71,22 @@ export class SkillsComponent implements OnInit {
     {
       name: 'TypeScript',
       class: 'type'
+    },
+    {
+      name: 'Hapi.js',
+      class: 'hapi'
+    },
+    {
+      name: 'Azure',
+      class: 'azure'
+    },
+    {
+      name: 'GCP',
+      class: 'gcp'
+    },
+    {
+      name: 'Passport.js',
+      class: 'passport'
     },
     {
       name: 'C/C++',
@@ -82,12 +107,59 @@ export class SkillsComponent implements OnInit {
     {
       name: 'Wordpress',
       class: 'wp'
+    },
+    {
+      name: 'Apollo',
+      class: 'apollo'
+    },
+    {
+      name: 'Redux',
+      class: 'redux'
+    },
+    {
+      name: 'RxJS',
+      class: 'rxjs'
+    },
+    {
+      name: 'NgRx',
+      class: 'ngrx'
+    },
+    {
+      name: 'MySQL',
+      class: 'mysql'
+    },
+    {
+      name: 'PostgreSQL',
+      class: 'postgre'
+    },
+    {
+      name: 'Python',
+      class: 'python'
+    },
+    {
+      name: 'Jasmine',
+      class: 'jasmine'
+    },
+    {
+      name: 'Travis CI',
+      class: 'travis'
+    },
+    {
+      name: 'GitHub',
+      class: 'github'
     }
   ];
   skillNo: number = this.skills.length;
+  p = 1;
   constructor() { }
 
   ngOnInit() {
+    this.innerWidth = window.innerWidth;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = window.innerWidth;
   }
 
   preventParentClick(e: any) {

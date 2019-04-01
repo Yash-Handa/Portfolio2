@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { CarouselModule } from 'ngx-carousel-lib';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 import { AppComponent } from './app.component';
 import { HeadContentComponent } from './head-content/head-content.component';
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     ScrollToModule.forRoot(),
     AnimateOnScrollModule.forRoot(),
-    CarouselModule
+    CarouselModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,9 +3,16 @@
   <p class="skills">
     <button
       class="btn hide-on-init {{s.class}}"
-      *ngFor="let s of skills"
+      *ngFor="let s of skills | paginate: { itemsPerPage: innerWidth < 650 ? 7: 13, currentPage: p }"
       animateOnScroll
       animationName="animated flipInX"
     ><span>{{s.name}}</span></button>
   </p>
+  <pagination-controls
+    (pageChange)="p = $event"
+    autoHide="true"
+    responsive="true"
+    previousLabel="Prev"
+    class="my-pagination"
+  ></pagination-controls>
 </div>

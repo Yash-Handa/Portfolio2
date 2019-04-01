@@ -22,6 +22,34 @@
   color: #ffffff;
 }
 
+.my-pagination /deep/ .ngx-pagination .current {
+  background: #563166;
+  box-shadow: 1px 2px 3px 0px black;
+}
+
+.my-pagination /deep/ .ngx-pagination a:hover, .ngx-pagination button:hover {
+  background: #563166;
+  color: white;
+  box-shadow: 1px 2px 3px black;
+}
+
+.my-pagination /deep/ .ngx-pagination a, .ngx-pagination button {
+  transition: all 0.2s;
+  margin: 10px 3px 0;
+}
+
+/* .ngx-pagination a, .ngx-pagination button {
+  margin: 0 10px;
+} */
+
+.my-pagination /deep/ .ngx-pagination a:focus, .ngx-pagination button:focus {
+  outline: none !important;
+}
+
+.my-pagination /deep/ .ngx-pagination {
+  padding-inline-start: 0 !important;
+}
+
 .btn {
   background: #563166;
   color: #ffffff;
@@ -87,118 +115,150 @@
   transform: translateY(300%);
 }
 
-.html:before {
-  content: url(../../assets/Skill-logos/html5.svg);
+.btn:before {
   padding-top: 3px;
   background: white;
+}
+
+.html:before {
+  content: url(../../assets/Skill-logos/html5.svg);
 }
 
 .css3:before {
   content: url(../../assets/Skill-logos/css3.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .js:before {
   content: url(../../assets/Skill-logos/javascript.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .ng:before {
   content: url(../../assets/Skill-logos/angular.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .node:before {
   content: url(../../assets/Skill-logos/nodejs.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .ex:before {
   content: url(../../assets/Skill-logos/express.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .mongo:before {
   content: url(../../assets/Skill-logos/mongodb.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .heroku:before {
   content: url(../../assets/Skill-logos/heroku.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .mocha:before {
   content: url(../../assets/Skill-logos/mocha.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .github:before {
   content: url(../../assets/Skill-logos/github.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .bootstrap:before {
   content: url(../../assets/Skill-logos/bootstrap.svg);
-  padding-top: 3px;
-  background: white;
-}
-
-.anime:before {
-  content: url(../../assets/Skill-logos/anime.png);
-  padding-top: 3px;
-  background: #000000;
 }
 
 .materialize:before {
   content: url(../../assets/Skill-logos/materialize.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .type:before {
   content: url(../../assets/Skill-logos/typescript.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .c:before {
   content: url(../../assets/Skill-logos/C++Logo.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .java:before {
   content: url(../../assets/Skill-logos/java.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .ai:before {
   content: url(../../assets/Skill-logos/illustrator.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .ph:before {
   content: url(../../assets/Skill-logos/photoshop.svg);
-  padding-top: 3px;
-  background: white;
 }
 
 .wp:before {
   content: url(../../assets/Skill-logos/wordpress.svg);
-  padding-top: 3px;
-  background: white;
+}
+
+.react:before {
+  content: url(../../assets/Skill-logos/react.svg);
+}
+
+.graphql:before {
+  content: url(../../assets/Skill-logos/graphql.svg);
+}
+
+.apollo:before {
+  content: url(../../assets/Skill-logos/apollo.svg);
+}
+
+.redux:before {
+  content: url(../../assets/Skill-logos/redux.svg);
+}
+
+.rxjs:before {
+  content: url(../../assets/Skill-logos/rxjs.svg);
+}
+
+.ngrx:before {
+  content: url(../../assets/Skill-logos/ngrx.svg);
+}
+
+.firebase:before {
+  content: url(../../assets/Skill-logos/firebase.svg);
+}
+
+.hapi:before {
+  content: url(../../assets/Skill-logos/hapi.svg);
+}
+
+.azure:before {
+  content: url(../../assets/Skill-logos/azure.svg);
+}
+
+.gcp:before {
+  content: url(../../assets/Skill-logos/gcp.svg);
+}
+
+.passport:before {
+  content: url(../../assets/Skill-logos/passport.svg);
+  background: black !important;
+}
+
+.mysql:before {
+  content: url(../../assets/Skill-logos/mysql.svg);
+}
+
+.postgre:before {
+  content: url(../../assets/Skill-logos/postgresql.svg);
+}
+
+.python:before {
+  content: url(../../assets/Skill-logos/python.svg);
+}
+
+.jasmine:before {
+  content: url(../../assets/Skill-logos/jasmine.svg);
+}
+
+.travis:before {
+  content: url(../../assets/Skill-logos/travis.svg);
+}
+
+.pwa:before {
+  content: url(../../assets/Skill-logos/pwa.svg);
 }
 
 @media(max-width: 930px) {
@@ -230,12 +290,15 @@
   }
   .btn {
     height: 64px;
-    min-width: 80px;
+    min-width: 100px;
     line-height: 20px;
     font-size: 13px;
     padding: 20px 10px;
     margin: 3px;
     letter-spacing: 1px;
     font-weight: 400;
+  }
+  .my-pagination /deep/ .ngx-pagination a, .ngx-pagination button {
+    margin: 5px 10px 0;
   }
 }
