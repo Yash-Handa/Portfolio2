@@ -1,6 +1,8 @@
 <div class="about-me-cover" (click)="preventParentClick($event)">
   <h2 class="heading hide-on-init" animateOnScroll animationName="animated bounceIn" offset="40">About Me</h2>
-  <p class="about-me hide-on-init" animateOnScroll animationName="animated flipInX">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eius nihil quaerat aut laborum enim animi, nobis eum quibusdam. Necessitatibus ducimus enim laboriosam eos blanditiis, omnis vel assumenda delectus labore?</p>
+  <p class="about-me hide-on-init" animateOnScroll animationName="animated flipInX">Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Quidem eius nihil quaerat aut laborum enim animi, nobis eum quibusdam. Necessitatibus
+    ducimus enim laboriosam eos blanditiis, omnis vel assumenda delectus labore?</p>
   <div class="row">
     <div class="column">
       <div class="box hide-on-init" animateOnScroll animationName="animated bounceInLeft">
@@ -16,13 +18,15 @@
         </svg>
         <h2>Education</h2>
         <h3><a href="http://www.msit.in/" target="_blank">Maharaja Surajmal Institute of Technology</a></h3>
-        <span>B.tech in Information Technology ( 2017 - 2021 )</span><hr>
+        <span>B.tech in Information Technology ( 2017 - 2021 )</span>
+        <hr>
         <h3><a href="https://www.salwanpublicschool.com/" target="_blank">Salwan Public School</a></h3>
-        <span>Secondary Schooling ( 2010 - 2017 )</span><hr>
+        <span>Secondary Schooling ( 2010 - 2017 )</span>
+        <hr>
       </div>
     </div>
     <div class="column">
-      <div class="box hide-on-init" animateOnScroll animationName="animated bounceInRight">
+      <div class="box hide-on-init open-source" animateOnScroll animationName="animated bounceInRight">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
           <line class="top big" x1="0" y1="0" x2="1200" y2="0" />
           <line class="left big" x1="0" y1="550" x2="0" y2="-1100" />
@@ -33,8 +37,51 @@
           <line class="bottom small" x1="300" y1="460" x2="-600" y2="460" />
           <line class="right small" x1="300" y1="0" x2="300" y2="1380" />
         </svg>
-        <h2>Hackathons</h2>
-        <span>Some text..</span>
+        <h2>Open Source</h2>
+        <div class="toggle-container">
+          <div class="left-caret" (click)="goLeft()" [ngClass]="{'disable': !end}">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-left" role="img"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" height="40px">
+              <path fill="currentColor"
+                d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z">
+              </path>
+            </svg>
+          </div>
+          <div class="right-caret" (click)="goRight()" [ngClass]="{'disable': end}">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" height="40px" role="img"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+              <path fill="currentColor"
+                d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <carousel-component
+          class="carousel"
+          #carousel
+          (onReachEnd)="onEnd()"
+          (onReachBeginning)="onStart()"
+        >
+          <div class="item-carousel">
+            <h3 class="open">Member Of...</h3>
+            <h3><a href="https://github.com/nodejs" target="_blank">Node.js Foundation</a></h3>
+            <hr>
+            <h3><a href="https://github.com/gatsbyjs" target="_blank">Gatsby</a></h3>
+            <hr>
+          </div>
+          <div class="item-carousel">
+            <h3 class="open">Contributed To...</h3>
+            <h3><a href="https://github.com/nodejs" target="_blank">Node.js Foundation</a></h3>
+            <hr>
+            <h3><a href="https://github.com/MobileUI" target="_blank">MobileUI
+              </a></h3>
+            <hr>
+            <h3><a href="https://github.com/gatsbyjs" target="_blank">Gatsby</a></h3>
+            <hr>
+            <h3><a href="https://github.com/NuGet" target="_blank">NuGet</a></h3>
+            <hr>
+          </div>
+        </carousel-component>
       </div>
     </div>
   </div>

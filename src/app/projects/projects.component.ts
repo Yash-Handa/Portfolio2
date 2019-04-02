@@ -27,7 +27,7 @@ export class ProjectsComponent implements OnInit {
       liveButton: true
     },
     {
-      name: 'Bollywood Debuting Actors',
+      name: 'Debuting Actors',
       description: `A fun family game as a Google Action about guessing the Debuting Film of some of the Great Bollywood Actors`,
       tStyle: {
         'background-image': 'url(../../Portfolio2/assets/ProjectImages/BDAT.png)',

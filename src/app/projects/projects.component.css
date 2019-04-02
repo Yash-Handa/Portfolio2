@@ -34,20 +34,26 @@
   float: left;
   margin: 0;
   padding: 0;
+  color: #FFEC94;
+  transition: all 0.2s;
 }
 
 .left-caret:hover {
   cursor: pointer;
+  color: rgb(245, 201, 6);
 }
 
 .right-caret{
   float: right;
   margin: 0;
   padding: 0;
+  color: #FFEC94;
+  transition: all 0.2s;
 }
 
 .right-caret:hover {
   cursor: pointer;
+  color: rgb(245, 201, 6);
 }
 
 .column h2 {
