@@ -32,25 +32,25 @@
 /** LIGHTBOX MARKUP **/
 
 .lightbox {
-	/** Default lightbox to hidden */
-	display: none;
+  /** Default lightbox to hidden */
+  display: none;
 
-	/** Position and style */
-	position: fixed;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
+  /** Position and style */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .lightbox img {
-	/** Pad the lightbox image */
-	max-width: 90%;
-	max-height: 80%;
-	margin-top: 2%;
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
 }
 
 /* .lightbox:target {
@@ -99,7 +99,7 @@
 .demo-item {
   position: relative;
   font-size: 2vw;
-  animation: animatetotop 9s steps(3) infinite;
+  animation: animatetotop 18s steps(6) infinite;
 }
 
 .demo-item_inner,
@@ -130,6 +130,7 @@
     left: 0;
     margin-right: auto;
   }
+
   100% {
     left: 100%;
     margin-left: .6em;
@@ -141,8 +142,19 @@
   0% {
     top: 0;
   }
+
   100% {
-    top: -150px;
+    top: -300px;
+  }
+}
+
+@keyframes animatetotopsmall {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: -480px;
   }
 }
 
@@ -179,6 +191,7 @@
     line-height: 1.3em;
     font-weight: 400;
   }
+
   .portrait {
     transform: none;
     position: relative;
@@ -197,16 +210,20 @@
     height: 25vw;
     z-index: 1;
   }
+
   .demo {
     padding-left: 7vw;
     margin-bottom: 6vh;
   }
+
   .demo-item {
     font-size: 2.3vw;
   }
+
   #portrait-cover {
     margin: 1vh 1vw 0 3vw;
   }
+
   .portrait:hover {
     transform: rotate(7deg);
   }
@@ -216,19 +233,36 @@
   .large {
     display: none;
   }
+
   .small,
   .demo {
     display: block;
     width: 100vw;
   }
+
   .demo {
     padding: 0;
     margin: 0;
+    text-align: center;
   }
+
   .demo-item {
     font-size: 5vw;
-    animation: animatetotop 9s steps(3) infinite;
+    animation: animatetotopsmall 18s steps(6) infinite;
+    text-align: center;
+    right: 12.5%;
   }
+
+  .demo-item_inner {
+    font-size: 7vw;
+    margin-top: 5px;
+  }
+
+  .demo,
+  .demo-item {
+    height: 80px;
+  }
+
   #content {
     padding: 0;
     padding-top: 10vh;
