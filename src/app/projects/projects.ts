@@ -10,6 +10,5 @@ export interface Projects {
 }
 
 interface Style {
-  'background': string;
-  'background-size': string;
+  'background-image': string;
 }

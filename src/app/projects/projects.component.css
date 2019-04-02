@@ -113,6 +113,11 @@
   height: 100%;
   width: 100%;
   box-sizing: border-box;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: blueviolet;
+  background-position-x: center;
 }
 
 .hover-fold .back {
@@ -137,6 +142,11 @@
   width: 100%;
   box-sizing: border-box;
   z-index: 0;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: blueviolet;
+  background-position-x: center;
 }
 
 .column {
