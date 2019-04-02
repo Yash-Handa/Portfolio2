@@ -13,8 +13,8 @@ export class ProjectsComponent implements OnInit {
   looperCheck = true;
   projects: Projects[] = [
     {
-      name: 'Project 1',
-      description: `Description of the Project`,
+      name: 'Socio Konnect',
+      description: `This is a fun project which enables Simultaneous Posting by Users on different platforms like Facebook, LinkedIn and Twitter`,
       tStyle: {
         background: 'url(../../Portfolio2/assets/ProjectImages/projT.jpg)',
         'background-size': '100% 100%'
@@ -23,14 +23,14 @@ export class ProjectsComponent implements OnInit {
         background: 'url(../../Portfolio2/assets/ProjectImages/projB.jpg)',
         'background-size': '100% 100%'
       },
-      gitHubLink: 'https://www.google.com',
+      gitHubLink: 'https://github.com/Yash-Handa/Socio-Konnect',
       gitHubButton: true,
-      liveLink: '#',
+      liveLink: 'https://socio-konnect.herokuapp.com',
       liveButton: true
     },
     {
-      name: 'Project 2',
-      description: `Description of the Project`,
+      name: 'Bollywood Debuting Actors',
+      description: `A fun family game as a Google Action about guessing the Debuting Film of some of the Great Bollywood Actors`,
       tStyle: {
         background: 'url(../../Portfolio2/assets/ProjectImages/projT.jpg)',
         'background-size': '100% 100%'
@@ -40,13 +40,29 @@ export class ProjectsComponent implements OnInit {
         'background-size': '100% 100%'
       },
       gitHubLink: '#',
-      gitHubButton: true,
-      liveLink: '#',
+      gitHubButton: false,
+      liveLink: 'https://assistant.google.com/services/a/uid/0000008f92f03652?jsmode=o&hl=en-IN&source=web',
       liveButton: true
     },
     {
-      name: 'Project 3',
-      description: `Description of the Project`,
+      name: 'SignIn SignUp',
+      description: `This is a fun project which provides complete Authentication and Registration for all users with Google, Facebook, GitHub, LinkedIn and EmailId`,
+      tStyle: {
+        background: 'url(../../Portfolio2/assets/ProjectImages/projT.jpg)',
+        'background-size': '100% 100%'
+      },
+      bStyle: {
+        background: 'url(../../Portfolio2/assets/ProjectImages/projB.jpg)',
+        'background-size': '100% 100%'
+      },
+      gitHubLink: 'https://github.com/Yash-Handa/SignIn-SignUp',
+      gitHubButton: true,
+      liveLink: 'https://signin-signup.herokuapp.com',
+      liveButton: true
+    },
+    {
+      name: 'Org Geographic',
+      description: `The Project is Under Construction :)`,
       tStyle: {
         background: 'url(../../Portfolio2/assets/ProjectImages/projT.jpg)',
         'background-size': '100% 100%'
@@ -56,58 +72,10 @@ export class ProjectsComponent implements OnInit {
         'background-size': '100% 100%'
       },
       gitHubLink: '#',
-      gitHubButton: true,
+      gitHubButton: false,
       liveLink: '#',
-      liveButton: true
+      liveButton: false
     },
-    {
-      name: 'Project 4',
-      description: `Description of the Project`,
-      tStyle: {
-        background: 'url(../../Portfolio2/assets/ProjectImages/projT.jpg)',
-        'background-size': '100% 100%'
-      },
-      bStyle: {
-        background: 'url(../../Portfolio2/assets/ProjectImages/projB.jpg)',
-        'background-size': '100% 100%'
-      },
-      gitHubLink: '#',
-      gitHubButton: true,
-      liveLink: '#',
-      liveButton: true
-    },
-    {
-      name: 'Project 5',
-      description: `Description of the Project`,
-      tStyle: {
-        background: 'url(../../Portfolio2/assets/ProjectImages/projT.jpg)',
-        'background-size': '100% 100%'
-      },
-      bStyle: {
-        background: 'url(../../Portfolio2/assets/ProjectImages/projB.jpg)',
-        'background-size': '100% 100%'
-      },
-      gitHubLink: '#',
-      gitHubButton: true,
-      liveLink: '#',
-      liveButton: true
-    },
-    {
-      name: 'Project 6',
-      description: `Description of the Project`,
-      tStyle: {
-        background: 'url(../../Portfolio2/assets/ProjectImages/projT.jpg)',
-        'background-size': '100% 100%'
-      },
-      bStyle: {
-        background: 'url(../../Portfolio2/assets/ProjectImages/projB.jpg)',
-        'background-size': '100% 100%'
-      },
-      gitHubLink: '#',
-      gitHubButton: true,
-      liveLink: '#',
-      liveButton: true
-    }
   ];
   projectNo: number = this.projects.length;
   constructor() {}
