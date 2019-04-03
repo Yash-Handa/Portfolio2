@@ -1,8 +1,6 @@
 <div class="about-me-cover" (click)="preventParentClick($event)">
   <h2 class="heading hide-on-init" animateOnScroll animationName="animated bounceIn" offset="40">About Me</h2>
-  <p class="about-me hide-on-init" animateOnScroll animationName="animated flipInX">Lorem ipsum dolor sit amet
-    consectetur adipisicing elit. Quidem eius nihil quaerat aut laborum enim animi, nobis eum quibusdam. Necessitatibus
-    ducimus enim laboriosam eos blanditiis, omnis vel assumenda delectus labore?</p>
+  <p class="about-me hide-on-init" animateOnScroll animationName="animated flipInX">Prolific, Full Stack Web Developer with a passion for metrics and beating former "best-yets". Currently pursuing B.tech in I.T with keen interest in Open Source, communities and football.</p>
   <div class="row">
     <div class="column">
       <div class="box hide-on-init" animateOnScroll animationName="animated bounceInLeft">
@@ -56,12 +54,7 @@
             </svg>
           </div>
         </div>
-        <carousel-component
-          class="carousel"
-          #carousel
-          (onReachEnd)="onEnd()"
-          (onReachBeginning)="onStart()"
-        >
+        <carousel-component class="carousel" #carousel (onReachEnd)="onEnd()" (onReachBeginning)="onStart()">
           <div class="item-carousel">
             <h3 class="open">Member Of...</h3>
             <h3><a href="https://github.com/nodejs" target="_blank">Node.js Foundation</a></h3>
