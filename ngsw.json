@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1554363103209,
+  "timestamp": 1554363754219,
   "index": "https://yashhanda.me/index.html",
   "assetGroups": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "name": "assets",
-      "installMode": "lazy",
+      "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
         "https://yashhanda.me/C++Logo.cf884d25420bb6a49f29.svg",
