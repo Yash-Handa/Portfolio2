@@ -16,10 +16,10 @@ export class ProjectsComponent implements OnInit {
       name: 'Socio Konnect',
       description: `This is a fun project which enables Simultaneous Posting by Users on different platforms like Facebook, LinkedIn and Twitter`,
       tStyle: {
-        'background-image': 'url(../../Portfolio2/assets/ProjectImages/SocioKonnectT.png)',
+        'background-image': 'url(../../assets/ProjectImages/SocioKonnectT.png)',
       },
       bStyle: {
-        'background-image': 'url(../../Portfolio2/assets/ProjectImages/SocioKonnectB.png)',
+        'background-image': 'url(../../assets/ProjectImages/SocioKonnectB.png)',
       },
       gitHubLink: 'https://github.com/Yash-Handa/Socio-Konnect',
       gitHubButton: true,
@@ -30,10 +30,10 @@ export class ProjectsComponent implements OnInit {
       name: 'Debuting Actors',
       description: `A fun family game as a Google Action about guessing the Debuting Film of some of the Great Bollywood Actors`,
       tStyle: {
-        'background-image': 'url(../../Portfolio2/assets/ProjectImages/BDAT.png)',
+        'background-image': 'url(../../assets/ProjectImages/BDAT.png)',
       },
       bStyle: {
-        'background-image': 'url(../../Portfolio2/assets/ProjectImages/BDAB.png)',
+        'background-image': 'url(../../assets/ProjectImages/BDAB.png)',
       },
       gitHubLink: '#',
       gitHubButton: false,
@@ -44,10 +44,10 @@ export class ProjectsComponent implements OnInit {
       name: 'SignIn SignUp',
       description: `This is a fun project which provides complete Authentication and Registration for all users with Google, Facebook, GitHub, LinkedIn and EmailId`,
       tStyle: {
-        'background-image': 'url(../../Portfolio2/assets/ProjectImages/SignInT.png)',
+        'background-image': 'url(../../assets/ProjectImages/SignInT.png)',
       },
       bStyle: {
-        'background-image': 'url(../../Portfolio2/assets/ProjectImages/SignInB.png)',
+        'background-image': 'url(../../assets/ProjectImages/SignInB.png)',
       },
       gitHubLink: 'https://github.com/Yash-Handa/SignIn-SignUp',
       gitHubButton: true,
@@ -58,10 +58,10 @@ export class ProjectsComponent implements OnInit {
       name: 'Org Geographic',
       description: `The Project is Under Construction :)`,
       tStyle: {
-        'background-image': 'url(../../Portfolio2/assets/ProjectImages/GeoT.png)',
+        'background-image': 'url(../../assets/ProjectImages/GeoT.png)',
       },
       bStyle: {
-        'background-image': 'url(../../Portfolio2/assets/ProjectImages/GeoB.png)',
+        'background-image': 'url(../../assets/ProjectImages/GeoB.png)',
       },
       gitHubLink: '#',
       gitHubButton: false,
