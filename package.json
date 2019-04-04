@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "publish": "ng build --prod --base-href \"https://yash-handa.github.io/Portfolio2/\" && npx ngh --dir=dist/Portfolio"
+    "publish": "ng build --prod --base-href \"https://yash-handa.github.io/Portfolio2/\" && npx ngh --dir=dist/Portfolio",
+    "HttpServer": "http-server -p 2019 -c-1 dist/Portfolio"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +21,9 @@
     "@angular/http": "^7.2.11",
     "@angular/platform-browser": "^7.2.11",
     "@angular/platform-browser-dynamic": "^7.2.11",
+    "@angular/pwa": "^0.12.4",
     "@angular/router": "^7.2.11",
+    "@angular/service-worker": "^7.2.11",
     "@nicky-lenaers/ngx-scroll-to": "^1.0.0",
     "animejs": "^2.2.0",
     "core-js": "^2.5.4",
@@ -43,6 +46,7 @@
     "@types/node": "~8.9.4",
     "angular-cli-ghpages": "^0.5.3",
     "codelyzer": "~4.2.1",
+    "http-server": "^0.11.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "^3.0.0",
